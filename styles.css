@@ -7,42 +7,110 @@
     --White: hsl(0, 0%, 100%);
 }
 
-* {
+html, body, main {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 body {
     background-color: var(--Gray);
     font-size: 1rem;
-    
-    
-}
-
-main {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    border: 1px solid red;
+    font-family: 'Karla', sans-serif;
 }
 
 .container {
-    width: 80%;
-   
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    height: 90%;
+    margin: 10px auto;
+}
+
+.join, .sub, .about {
+    height: 100%;
+    padding: 20px;
 }
 
 .join {
     background-color: var(--White);
+    line-height: 25px;
+
+}
+
+.join h1 {
+    font-size: inherit;
+    color: var(--Cyan);
+}
+
+.join .day, .join .access {
+    font-size: 0.85rem;
+}
+
+.join .day {
+    color: var(--Yellow);
+}
+
+.join .access {
+   color: var(--GrayBlue);
+   font-size: 0.8rem;
 }
 
 .sub {
     background-color: var(--Cyan);
 }
 
+.sub h2 {
+    color: var(--White);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.sub span {
+    color: var(--White);
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.sub .day_price {
+    color: var(--White);
+    font-size: 0.82rem;
+}
+
+.sub .monthly_price {
+    color: var(--LightBlue);
+    font-size: 0.8rem;
+}
+
+button {
+    padding: 12px 90px;
+    background-color: var(--Yellow);
+    color: var(--White);
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    margin-top: 15px;
+}
+
+
 .about {
     background-color: var(--LightBlue);
+    color: var(--White);
 }   
+
+.about h3 {
+    font-size: 0.9rem;
+}
+
+.about ul {
+    font-size: 0.75rem;
+    font-weight: 400;
+    list-style: none;
+    line-height: 1.5;
+    padding: 0;
+}
