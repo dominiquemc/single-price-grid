@@ -77,7 +77,7 @@ body, main {
 
 .join .access {
    color: var(--GrayBlue);
-   font-size: 0.8rem;
+   font-size: 0.9rem;
 }
 
 .sub {
@@ -126,6 +126,11 @@ button {
     padding: 15px;
     box-shadow: 1px 1px 5px rgb(137, 136, 136);
     
+}
+
+button:hover {
+    background-color:hsl(71, 60%, 54%);
+    cursor: pointer;
 }
 
 .about {
