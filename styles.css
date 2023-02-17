@@ -1,6 +1,7 @@
 :root {
     --Cyan: hsl(179, 62%, 43%);
     --LightBlue: hsl(179, 43%, 56%);
+    --DarkestBlue: hsl(179, 53%, 62%);
     --Yellow: hsl(71, 73%, 54%);
     --Gray: hsl(204, 43%, 93%);
     --GrayBlue: hsl(218, 22%, 67%);
@@ -27,14 +28,13 @@ body, main {
 .container {
     border-radius: 5px;
     overflow: hidden;
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas: 
     'one'
     'two'
-     'three';
-        
+    'three';
 }
 
 .join {
@@ -50,9 +50,11 @@ body, main {
 }
 
 .join, .sub, .about {
-    padding: 20px;
-    
-   
+    padding: 30px;
+}
+
+.about {
+    padding-bottom: 10px;
 }
 
 .join {
@@ -105,14 +107,13 @@ body, main {
     font-size: 0.8rem;
 }
 
-.btn-container {
-    border: 1px solid red;
-    display: flex;
-    
+.sub .per_month {
+    font-size: 0.8rem;
+    color: var(--DarkestBlue);
+
 }
 
 button {
-   
     background-color: var(--Yellow);
     color: var(--White);
     font-weight: 700;
@@ -120,8 +121,9 @@ button {
     border-radius: 3px;
     font-size: 0.75rem;
     margin: 15px auto 0 auto;
-    width: 80%;
-    padding: 13px;
+    width: 95%;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgb(137, 136, 136);
     
 }
 
@@ -138,13 +140,11 @@ button {
     font-size: 0.75rem;
     font-weight: 400;
     list-style: none;
-    line-height: 1.5;
+    line-height: 1.7;
     padding: 0;
 }
 
-
-
-@media (min-width: 750px) {
+@media (min-width: 635px) {
 
     main {
         width: 100%;
@@ -168,5 +168,9 @@ button {
 
     .about {
         grid-area: three;
+    }
+    
+    button {
+        max-width: 85%;
     }
 }
